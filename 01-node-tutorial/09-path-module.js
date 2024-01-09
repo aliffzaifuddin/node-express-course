@@ -1,3 +1,4 @@
+// Use built-in module which is path
 const path = require('path')
 
 console.log(path.sep)

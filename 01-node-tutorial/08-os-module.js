@@ -1,3 +1,4 @@
+// Use built-in module which is os
 const os = require('os')
 
 // info about current user
