@@ -1,8 +1,12 @@
 const { readFile, writeFile } = require('fs').promises
+
+// Use util built in library in nodejs to get readFile and writeFile as promises
 // const util = require('util')
 // const readFilePromise = util.promisify(readFile)
 // const writeFilePromise = util.promisify(writeFile)
 
+
+// Use asyn await function to offload the readFile and writeFile function to read asynchronously
 const start = async () => {
   try {
     const first = await readFile('./content/first.txt', 'utf8')
@@ -31,6 +35,7 @@ start()
 //     })
 //   })
 // }
+
 // getText('./content/first.txt')
 //   .then((result) => console.log(result))
 //   .catch((err) => console.log(err))
