@@ -7,7 +7,7 @@ const authorize = require('./authorize')
 
 // app.use([logger, authorize])
 // app.use(express.static('./public'))
-app.use(morgan('tiny'))
+app.use(morgan('tiny')) // 3rd party middleware uses with Express
 
 app.get('/', (req, res) => {
   res.send('Home')
